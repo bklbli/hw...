@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <h1>BMI值計算</h1>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:rgb(147, 147, 197);"></div>
+    <div class="col-sm-8" style="background-color:rgb(243, 200, 214);">
+    <h1>bmi計算</h1>
+              <p>身高(公分):<input type="number"id="a" name="a"></p>
+              <p>體重(公斤):<input type="number"id="b" name="b"></p>
+              <p>BMI的值<input type="number"id="total" name="total"></p>
+              <p><button onclick="cal()">計算</button>></p>
+              <script>
+                function cal() {
+                  document.getElementById("total").value = document.getElementById("b").value/((document.getElementById("a").value/100)**2)
+                }
+              </script>  
+              </div>
+           </div>
+        </div>   
+</body>
+</html>
